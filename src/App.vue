@@ -6,8 +6,17 @@
 </template>
 
 <script setup>
-import { RouterView } from 'vue-router'
+import TelemetryDashboard from './components/TelemetryDashboard.vue'
 </script>
+
+<template>
+  <div>
+    <!-- Your existing portfolio navbar components can stay here -->
+    
+    <!-- Render your live F1 pipeline dashboard node -->
+    <TelemetryDashboard />
+  </div>
+</template>
 
 <style>
 /* Global resets to keep your application looking clean and modern */
