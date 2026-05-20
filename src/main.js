@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
+import router from './router' // Points to your src/router/index.js
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.use(router) // This activates the router engine
+app.mount('#app')
